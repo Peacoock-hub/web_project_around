@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Alrededor de EUA"
+    />
+    <meta name="keywords" content="around" />
+    <meta name="author" content="José María Moreno" />
+    <title>Around the US</title>
+    <link rel="shortcut icon" href="" />
+    <link rel="stylesheet" href="./pages/index.css" />
+</head>
+<body>
+    <div class="page">
+        <header class="header"> 
+            <img
+              src="./images/Vector.png"
+              alt="logo-page"
+              class="header__logo"
+            > 
+        </header>
+        <main class="main">
+            <section class="main__profile">
+                <img
+                  src="./images/avatar.jpeg"
+                  alt="User Avatar"
+                  class="main__profile-image"
+                />
+                <div class="main__content-paragraph">
+                    <p class="main__paragraph main__paragraph_name">Jacques Cousteau</p>
+                    <p class="main__paragraph main__paragraph_about">Explorador</p>
+                    <button class="main__button main__button_edit"></button>
+                </div>
+                <button class="main__button main__button_add"></button>
+              </section>
+            <section class="main__gallery">
+                <div class="main__gallery-card">
+                    <img 
+                    src="./images/Yosemite.jpeg" 
+                    class="main__gallery-image"
+                    alt="Photo of Valle de Yosemite">
+                    <div class="main__gallery-content">
+                        <p class="main__gallery-paragraph">Valle de Yosemite</p>
+                        <button class="main__button main__button_like">
+                          <img
+                          src="./images/like.svg"
+                          alt="like"
+                          class="main__gallery-like"
+                          />
+                        </button>
+                    </div>
+                </div>
+                <div class="main__gallery-card">
+                    <img 
+                    src="./images/Lake.jpeg" 
+                    class="main__gallery-image"
+                    alt="Photo of Lago Louise">
+                    <div class="main__gallery-content">
+                        <p class="main__gallery-paragraph">Lago Louise</p>
+                        <button class="main__button main__button_like">
+                          <img
+                          src="./images/like.svg"
+                          alt="like"
+                          class="main__gallery-like"
+                          />
+                        </button>
+                    </div>
+                </div>
+                <div class="main__gallery-card">
+                    <img 
+                    src="./images/Calvas.jpeg" 
+                    class="main__gallery-image"
+                    alt="Photo of Montañas Calvas">
+                    <div class="main__gallery-content">
+                        <p class="main__gallery-paragraph">Montañas Calvas</p>
+                        <button class="main__button main__button_like">                          <img
+                          src="./images/like.svg"
+                          alt="like"
+                          class="main__gallery-like"
+                          /></button>
+                    </div>
+                </div>
+                <div class="main__gallery-card">
+                    <img 
+                    src="./images/Latemar.jpeg" 
+                    class="main__gallery-image"
+                    alt="Photo of Latemar">
+                    <div class="main__gallery-content">
+                        <p class="main__gallery-paragraph">Latemar</p>
+                        <button class="main__button main__button_like">
+                          <img
+                          src="./images/like.svg"
+                          alt="like"
+                          class="main__gallery-like"
+                          />
+                        </button>
+                    </div>
+                </div>
+                <div class="main__gallery-card">
+                    <img 
+                    src="./images/Vanoise.jpeg" 
+                    class="main__gallery-image"
+                    alt="Photo of Vanois National Park">
+                    <div class="main__gallery-content">
+                        <p class="main__gallery-paragraph">Vanois National...</p>
+                        <button class="main__button main__button_like">
+                          <img
+                          src="./images/like.svg"
+                          alt="like"
+                          class="main__gallery-like"
+                          />
+                        </button>
+                    </div>
+                </div>
+                <div class="main__gallery-card">
+                    <img 
+                    src="./images/Lago.jpeg" 
+                    class="main__gallery-image"
+                    alt="Photo of Lago di Braies">
+                    <div class="main__gallery-content">
+                        <p class="main__gallery-paragraph">Lago di Braies</p>
+                        <button class="main__gallery-like">
+                          <img
+                          src="./images/like.svg"
+                          alt="like"
+                          class="main__gallery-like"
+                          />
+                        </button>
+                    </div>
+                </div>
+            </section>
+                   <!-- Pop up -->
+             <div class="popup">
+                <button type="button" class="popup__button popup__button_close">
+                  &#x1F7A9;
+                </button>
+                <form action="" class="popup__container">
+                  <h2 class="popup__subtitle">Editar perfil</h2>
+                  <fieldset class="popup__content">
+                    <input
+                      type="text"
+                      class="popup__input popup__input_name"
+                      placeholder="Nombre"
+                    />
+                    <input
+                      type="text"
+                      class="popup__input popup__input_about"
+                      placeholder="Acerca de mi"
+                    />
+                  </fieldset>
+                  <fieldset class="popup__content">
+                    <button type="submit" class="popup__button popup__button_save">
+                      Guardar
+                    </button>
+                  </fieldset>
+                </form>
+              </div>
+        </main>
+        <footer class="footer">
+            © 2024 Around The U.S.
+        </footer>
+    </div>
+    <script src="scripts/index.js"></script>
+</body>
+</html>
