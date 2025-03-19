@@ -1,31 +1,31 @@
-let butEdit = document.querySelector(".main__button_edit");
-let popup = document.querySelector(".popup");
-let butClose = document.querySelector(".popup__button_close");
-let form = document.querySelector(".popup__container");
-let inName = document.querySelector(".main__paragraph_name");
-let inAbout = document.querySelector(".main__paragraph_about");
-let inpName = document.querySelector(".popup__input_name");
-let inpAbout = document.querySelector(".popup__input_about");
+const popupProfile = document.querySelector(".popup_profile");
+const formProfile = popupProfile.querySelector(".popup__form");
+const nameInput = formProfile.querySelector(".popup__form-name");
+const aboutInput = formProfile.querySelector(".popup__form-occupation");
 
-function openEdit() {
-  inpName.value = inName.textContent;
-  inpAbout.value = inAbout.textContent;
-  popup.classList.toggle("popup_opened");
-}
+const closePopupProfile = popupProfile.querySelector(".popup__button-close");
+const editButton = document.querySelector(".main__button_edit");
 
-butEdit.addEventListener("click", openEdit);
-butClose.addEventListener("click", openEdit);
+const profileName = document.querySelector(".main__paragraph_name");
+const profileAbout = document.querySelector(".main__paragraph_about");
 
-function saveChange(e) {
-  e.preventDefault();
-  inName.textContent = inpName.value;
-  inAbout.textContent = inpAbout.value;
-  openEdit();
-}
-if (nameValue !== "" && aboutValue !== "") {
-  profileName.textContent = nameValue;
-  profileAbout.textContent = aboutValue;
+editButton.addEventListener("click", function () {
+  popupProfile.classList.add("popup_opened");
+  nameInput.value = profileName.textContent;
+  aboutInput.value = profileAbout.textContent;
+});
+
+closePopupProfile.addEventListener("click", function () {
   popupProfile.classList.remove("popup_opened");
-}
+});
 
-form.addEventListener("submit", saveChange);
+formProfile.addEventListener("submit", function (event) {
+  event.preventDefault();
+  const nameValue = nameInput.value;
+  const aboutValue = aboutInput.value;
+  if (nameValue !== "" && aboutValue !== "") {
+    profileName.textContent = nameValue;
+    profileAbout.textContent = aboutValue;
+    popupProfile.classList.remove("popup_opened");
+  }
+});

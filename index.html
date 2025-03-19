@@ -133,31 +133,52 @@
                 </div>
             </section>
                    <!-- Pop up -->
-             <div class="popup">
-                <button type="button" class="popup__button popup__button_close">
-                  &#x1F7A9;
-                </button>
-                <form action="#" class="popup__container">
-                  <h2 class="popup__subtitle">Editar perfil</h2>
-                  <fieldset class="popup__content">
-                    <input
-                      type="text"
-                      class="popup__input popup__input_name"
-                      placeholder="Nombre"
-                    />
-                    <input
-                      type="text"
-                      class="popup__input popup__input_about"
-                      placeholder="Acerca de mi"
-                    />
-                  </fieldset>
-                  <fieldset class="popup__content">
-                    <button type="submit" class="popup__button popup__button_save">
-                      Guardar
-                    </button>
-                  </fieldset>
-                </form>
-              </div>
+                   <section class="popup popup_profile">
+                    <div class="popup__container">
+                      <h2 class="popup__form-title">Editar Perfil</h2>
+                      <form class="popup__form">
+                        <input
+                          class="popup__form-name"
+                          type="text"
+                          id="name"
+                          name="name"
+                          placeholder="Nombre"
+                        />
+                        <input
+                          class="popup__form-occupation"
+                          type="text"
+                          id="occupation"
+                          name="occupation"
+                          placeholder="Acerca de mi"
+                        />
+                        <button class="popup__form-button">Guardar</button>
+                      </form>
+                    </div>
+                    <div class="popup__button-close"></div>
+                  </section>
+                  <section class="popup popup_add">
+                    <div class="popup__container">
+                      <h2 class="popup__form-title">Nuevo Lugar</h2>
+                      <form class="popup__form">
+                        <input
+                          class="popup__form-name"
+                          type="text"
+                          id="name"
+                          name="name"
+                          placeholder="Título"
+                        />
+                        <input
+                          class="popup__form-occupation"
+                          type="url"
+                          id="occupation"
+                          name="occupation"
+                          placeholder="Enlace a la imagen"
+                        />
+                        <button class="popup__form-button">Guardar</button>
+                      </form>
+                    </div>
+                    <div class="popup__button-close"></div>
+                  </section>
         </main>
         <footer class="footer">
             © 2024 Around The U.S.
